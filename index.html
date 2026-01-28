@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -28,12 +28,15 @@
       }
       .project-card,
       .certificate-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
       }
       .project-card:hover,
       .certificate-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        box-shadow:
+          0 20px 25px -5px rgb(0 0 0 / 0.1),
           0 8px 10px -6px rgb(0 0 0 / 0.1);
       }
     </style>
@@ -92,17 +95,15 @@
 
     <!-- Hero Section -->
     <main>
-      <section
-        class="hero-bg text-white pt-20 pb-10 md:pt-5 md:pb-5 relative overflow-hidden"
-      >
-        <div
-          class="w-56 h-56 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-4 border-sky-500 shadow-2xl mb-6 ring-4 ring-sky-300/20 bg-slate-800"
-        >
-          <img
-            src="./imagenes/Imagen de WhatsApp 2025-10-19 a las 22.34.44_bd910cce.jpg"
-            alt="Foto de Andersson Herrera Moreno"
-            class="object-cover object-top scale-110 transform hover:scale-115 transition-transform duration-500"
-          />
+      <section class="hero-bg text-white pt-20 pb-10 md:pt-24 md:pb-16">
+        <div class="container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Frontend Developer | JavaScript & React
+          </h1>
+          <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+            Desarrollo interfaces web claras, responsivas y funcionales con
+            HTML, CSS, JavaScript y React.
+          </p>
         </div>
       </section>
 
@@ -155,71 +156,79 @@
 
       <!-- Projects Section -->
       <section id="projects" class="py-20">
+        <header class="mb-16 text-center">
+          <h2 class="text-4xl font-bold section-title">Proyectos Destacados</h2>
+        </header>
         <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center section-title mb-16">
-            Proyectos Destacados
-          </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
             <!-- Project 1 -->
-            <div
+            <article
               class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
             >
               <div class="p-8">
                 <h3 class="text-2xl font-bold text-slate-800 mb-3">
-                  Clima App
+                  Los Poetas Web
                 </h3>
+
                 <p class="mb-6">
-                  Una aplicación moderna para consultar el clima en tiempo real
-                  de cualquier ciudad del mundo, utilizando una API externa.
+                  Sitio web corporativo desarrollado para una empresa real,
+                  enfocado en presentar servicios y contenido digital con una
+                  interfaz clara, moderna y optimizada para distintos
+                  dispositivos.
                 </p>
+
+                <p class="mb-4 text-sm text-slate-600">
+                  ✔ Desarrollo frontend completo<br />
+                  ✔ Diseño responsive y adaptable<br />
+                  ✔ Optimización de estructura y experiencia de usuario
+                </p>
+
                 <div class="flex space-x-4">
                   <a
-                    href="https://clima-app-rosy.vercel.app/"
+                    href="https://los-poetas-web.vercel.app/"
                     target="_blank"
                     class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fas fa-external-link-alt mr-2"></i>Ver Demo</a
                   >
-                  <a
-                    href="https://github.com/Yohanan08/clima-app.git"
-                    target="_blank"
-                    class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fab fa-github mr-2"></i>Ver Código</a
-                  >
+                    <i class="fas fa-external-link-alt mr-2"></i>Ver Demo
+                  </a>
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Project 2 -->
-            <div
+            <article
               class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
             >
               <div class="p-8">
                 <h3 class="text-2xl font-bold text-slate-800 mb-3">
-                  To-Do List
+                  Tesla Electric
                 </h3>
+
                 <p class="mb-6">
-                  Aplicación de lista de tareas interactiva para gestionar
-                  actividades diarias de forma sencilla y eficiente.
+                  Sitio web desarrollado para una empresa del sector eléctrico,
+                  orientado a mostrar servicios, información corporativa y
+                  facilitar el contacto con clientes potenciales.
                 </p>
+
+                <p class="mb-4 text-sm text-slate-600">
+                  ✔ Maquetación HTML y estilos CSS modernos<br />
+                  ✔ Diseño responsive para móviles y escritorio<br />
+                  ✔ Implementación de interactividad básica con JavaScript
+                </p>
+
                 <div class="flex space-x-4">
                   <a
-                    href="https://yohanan08.github.io/todo-list/"
+                    href="https://tesla-electric.vercel.app/"
                     target="_blank"
                     class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fas fa-external-link-alt mr-2"></i>Ver Demo</a
                   >
-                  <a
-                    href="https://github.com/Yohanan08/todo-list.git"
-                    target="_blank"
-                    class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fab fa-github mr-2"></i>Ver Código</a
-                  >
+                    <i class="fas fa-external-link-alt mr-2"></i>Ver Demo
+                  </a>
                 </div>
               </div>
-            </div>
-
+            </article>
             <!-- Project 3 -->
-            <div
+            <article
               class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
             >
               <div class="p-8">
@@ -229,6 +238,11 @@
                 <p class="mb-6">
                   Un divertido juego de batalla por turnos que simula un combate
                   Pokémon, demostrando lógica de juego con JavaScript.
+                </p>
+                <p class="mb-4 text-sm text-slate-600">
+                  ✔ Desarrollo de lógica de juego con JavaScript<br />
+                  ✔ Manejo de estados y turnos<br />
+                  ✔ Manipulación del DOM y eventos
                 </p>
                 <div class="flex space-x-4">
                   <a
@@ -245,22 +259,27 @@
                   >
                 </div>
               </div>
-            </div>
+            </article>
 
             <!-- Project 4 -->
-            <div
+            <article
               class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
             >
               <div class="p-8">
                 <h3 class="text-2xl font-bold text-slate-800 mb-3">
-                  Biblioteca Torá – Aplicación Web Interactiva
+                  Biblioteca Inteligente con IA
                 </h3>
                 <p class="mb-6">
-                  Una aplicación web desplegada en Vercel que combina interfaz
-                  limpia con integración de IA para facilitar la exploración
-                  bíblica desde la perspectiva del Ministerio Judío Mesiánico.
-                  El usuario puede realizar preguntas en lenguaje natural,
-                  navegar por un historial de consultas y acceder a contenidos.
+                  Aplicación web interactiva que integra inteligencia artificial
+                  para la consulta, organización y búsqueda inteligente de
+                  grandes volúmenes de texto, con enfoque en experiencia de
+                  usuario y arquitectura frontend.
+                </p>
+                <p class="mb-4 text-sm text-slate-600">
+                  ✔ Arquitectura frontend para manejo de grandes volúmenes de
+                  texto<br />
+                  ✔ Integración de inteligencia artificial vía API<br />
+                  ✔ Diseño enfocado en experiencia de usuario
                 </p>
                 <div class="flex space-x-4">
                   <a
@@ -277,7 +296,7 @@
                   >
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -422,23 +441,6 @@
         </p>
       </div>
     </footer>
-
-    <script>
-      // Mobile menu toggle
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      // Close mobile menu when a link is clicked
-      const mobileLinks = mobileMenu.getElementsByTagName("a");
-      for (let i = 0; i < mobileLinks.length; i++) {
-        mobileLinks[i].addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-        });
-      }
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
