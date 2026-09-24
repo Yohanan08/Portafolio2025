@@ -100,10 +100,23 @@
           <h1 class="text-4xl md:text-5xl font-bold mb-4">
             Frontend Developer | JavaScript & React
           </h1>
-          <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+          <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-8">
             Desarrollo interfaces web claras, responsivas y funcionales con
             HTML, CSS, JavaScript y React.
           </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="CV_Andersson_Herrera_Moreno.pdf"
+              download
+              class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
+              ><i class="fas fa-download mr-2"></i>Descargar CV</a
+            >
+            <a
+              href="#projects"
+              class="bg-transparent border-2 border-slate-400 hover:border-sky-400 hover:text-sky-400 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
+              >Ver Proyectos</a
+            >
+          </div>
         </div>
       </section>
 
@@ -160,7 +173,106 @@
         </header>
         <div class="container mx-auto px-6">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-            <!-- Project 1 -->
+            <article
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="p-8">
+                <h3 class="text-2xl font-bold text-slate-800 mb-3">
+                  Audio Splitter Pro
+                </h3>
+                <p class="mb-6">
+                  Divide audios de más de una hora y los convierte a MP3,
+                  procesando todo dentro del navegador con WebAssembly: sin
+                  servidor, sin backend y sin costo de hosting.
+                </p>
+                <p class="mb-4 text-sm text-slate-600">
+                  ✔ Corte y conversión de audio 100% en el navegador
+                  (WebAssembly)<br />
+                  ✔ Sin servidor: funciona siempre, gratis y sin límite de
+                  uso<br />
+                  ✔ Soporta archivos de más de una hora sin fallar
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://audio-splitter-pro.vercel.app/"
+                    target="_blank"
+                    class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                    ><i class="fas fa-external-link-alt mr-2"></i>Ver Demo</a
+                  >
+                  <a
+                    href="https://github.com/Yohanan08/audio-splitter-pro"
+                    target="_blank"
+                    class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                    ><i class="fab fa-github mr-2"></i>Ver Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="p-8">
+                <h3 class="text-2xl font-bold text-slate-800 mb-3">
+                  Transcriptor con IA local
+                </h3>
+                <p class="mb-6">
+                  Transcribe audio a texto usando un modelo Whisper que corre
+                  localmente en el navegador (Transformers.js), sin depender de
+                  ninguna API externa de pago.
+                </p>
+                <p class="mb-4 text-sm text-slate-600">
+                  ✔ Inteligencia artificial corriendo 100% en el cliente<br />
+                  ✔ Procesamiento en un Web Worker para no bloquear la
+                  interfaz<br />
+                  ✔ Exportación del resultado a PDF
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://transcriptor-yeshua-la-tor-viviente-two.vercel.app/"
+                    target="_blank"
+                    class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                    ><i class="fas fa-external-link-alt mr-2"></i>Ver Demo</a
+                  >
+                  <a
+                    href="https://github.com/Yohanan08/Transcriptor-Yeshua-la-Tor-Viviente"
+                    target="_blank"
+                    class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                    ><i class="fab fa-github mr-2"></i>Ver Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="p-8">
+                <h3 class="text-2xl font-bold text-slate-800 mb-3">
+                  Los Poetas Web
+                </h3>
+                <p class="mb-6">
+                  Sitio web corporativo desarrollado para una empresa real,
+                  enfocado en presentar servicios y contenido digital con una
+                  interfaz clara, moderna y optimizada para distintos
+                  dispositivos.
+                </p>
+                <p class="mb-4 text-sm text-slate-600">
+                  ✔ Desarrollo frontend completo para un cliente real<br />
+                  ✔ Diseño responsive y adaptable<br />
+                  ✔ Optimización de estructura y experiencia de usuario
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://los-poetas-web.vercel.app/"
+                    target="_blank"
+                    class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+                    ><i class="fas fa-external-link-alt mr-2"></i>Ver Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
             <article
               class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
             >
@@ -193,111 +305,6 @@
                     class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
                     ><i class="fab fa-github mr-2"></i>Ver Código</a
                   >
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 2 -->
-            <article
-              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
-            >
-              <div class="p-8">
-                <h3 class="text-2xl font-bold text-slate-800 mb-3">
-                  Audio Splitter Pro
-                </h3>
-                <p class="mb-6">
-                  Aplicación web para dividir archivos de audio de forma
-                  automática y optimizada. Tecnologías: JavaScript, Web APIs •
-                  Procesamiento de archivos en el navegador • Conversión y
-                  optimización en formato MP3 • Interfaz rápida y fácil de usar
-                </p>
-                <p class="mb-4 text-sm text-slate-600">
-                  ✔ División automática de archivos de audio<br />
-                  ✔ Conversión a formato MP3 optimizado<br />
-                  ✔ Interfaz web simple para procesamiento rápido de audio.
-                </p>
-                <div class="flex space-x-4">
-                  <a
-                    href="https://audio-splitter-pro-production.up.railway.app/"
-                    target="_blank"
-                    class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fas fa-external-link-alt mr-2"></i>Ver Demo</a
-                  >
-                  <a
-                    href="https://github.com/Yohanan08/audio-splitter-pro.git"
-                    target="_blank"
-                    class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fab fa-github mr-2"></i>Ver Código</a
-                  >
-                </div>
-              </div>
-            </article>
-            <!-- Project 3 -->
-            <article
-              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
-            >
-              <div class="p-8">
-                <h3 class="text-2xl font-bold text-slate-800 mb-3">
-                  Pokémon Battle
-                </h3>
-                <p class="mb-6">
-                  Aplicación interactiva que simula combates usando la API de
-                  Pokémon. Tecnologías: JavaScript, API REST • Lógica de combate
-                  por turnos • Manejo de estados y eventos • Consumo de datos
-                  dinámicos
-                </p>
-                <p class="mb-4 text-sm text-slate-600">
-                  ✔ Desarrollo de lógica de juego con JavaScript<br />
-                  ✔ Manejo de estados y turnos<br />
-                  ✔ Manipulación del DOM y eventos
-                </p>
-                <div class="flex space-x-4">
-                  <a
-                    href="https://yohanan08.github.io/pokemon-battle/"
-                    target="_blank"
-                    class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fas fa-external-link-alt mr-2"></i>Ver Demo</a
-                  >
-                  <a
-                    href="https://github.com/Yohanan08/pokemon-battle.git"
-                    target="_blank"
-                    class="flex-1 text-center bg-slate-800 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                    ><i class="fab fa-github mr-2"></i>Ver Código</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 4 -->
-            <article
-              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
-            >
-              <div class="p-8">
-                <h3 class="text-2xl font-bold text-slate-800 mb-3">
-                  Los Poetas Web
-                </h3>
-
-                <p class="mb-6">
-                  Sitio web corporativo desarrollado para una empresa real,
-                  enfocado en presentar servicios y contenido digital con una
-                  interfaz clara, moderna y optimizada para distintos
-                  dispositivos.
-                </p>
-
-                <p class="mb-4 text-sm text-slate-600">
-                  ✔ Desarrollo frontend completo<br />
-                  ✔ Diseño responsive y adaptable<br />
-                  ✔ Optimización de estructura y experiencia de usuario
-                </p>
-
-                <div class="flex space-x-4">
-                  <a
-                    href="https://los-poetas-web.vercel.app/"
-                    target="_blank"
-                    class="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-                  >
-                    <i class="fas fa-external-link-alt mr-2"></i>Ver Demo
-                  </a>
                 </div>
               </div>
             </article>
